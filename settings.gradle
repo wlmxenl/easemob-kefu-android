@@ -1,2 +1,2 @@
-// include ':app', ':kefu-easeui', ':bottomnavigation', ':zbarlibary', ':compoundlayout'
+// include ':app', ':kefu-easeui', ':bottomnavigation', ':zbarlibary', ':compoundlayout', ':player'
 include ':kefu-easeui', ":player"

@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.huawei.agconnect'
 
-Properties prop = new Properties()
-prop.load(new FileInputStream(file("signing.properties")))
+// Properties prop = new Properties()
+// prop.load(new FileInputStream(file("signing.properties")))
 
 
 android {
@@ -30,14 +30,14 @@ android {
         javaMaxHeapSize "4g"
     }
 
-    signingConfigs{
-        release{
-            storeFile file(prop['KEY_FILE'])
-            storePassword prop['STORE_PASSWORD']
-            keyAlias prop['KEY_ALIAS']
-            keyPassword prop['KEY_PASSWORD']
-        }
-    }
+//    signingConfigs{
+//        release{
+//            storeFile file(prop['KEY_FILE'])
+//            storePassword prop['STORE_PASSWORD']
+//            keyAlias prop['KEY_ALIAS']
+//            keyPassword prop['KEY_PASSWORD']
+//        }
+//    }
 
     buildTypes {
         debug {
